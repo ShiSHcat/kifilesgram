@@ -1,0 +1,17 @@
+{
+  "name": "kifilesgram",
+  "version": "1.0.0",
+  "description": "Kifiles uploader for telegram bot",
+  "main": "index.js",
+  "dependencies": {
+    "is-windows": "^1.0.2",
+    "request": "^2.88.0",
+    "telegraf": "^3.33.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "ShiSHcat",
+  "license": "WTFPL"
+}

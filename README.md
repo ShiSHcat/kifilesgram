@@ -12,16 +12,21 @@
 </p>
 <hr>
 
+> ## This bot can be used to get links from forwarded pics/video/documents.
 ## How to install
-### You must have installed node.js to install this telegram bot.
-
+## You must have installed node.js to install this telegram bot.
+If you are on linux and have git installed run this.
 ```
 git clone https://github.com/ShiSHcat/kifilesgram
 cd kifilesgram
 npm install
 ```
+If you are on windows download the repo from the Download button , extract it in a directory and run npm install .
+<br>
+Then rename config.example.js into config.js , get a bot token with @BotFather on telegram and set it into readme.
+
+## How to use
 To run do 
 ```
 npm start
 ```
->## This bot can be used to get links from forwarded pics/video/documents.

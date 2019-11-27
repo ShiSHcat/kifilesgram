@@ -1,5 +1,5 @@
 <h1 align="center">
-<a href="https://github.com/discordgram/DiscordForTelegram">Kifilesgram (from Telegram to [KiFiles](http://kifiles.gq) uploader)</a>
+<a href="https://github.com/discordgram/DiscordForTelegram">Kifilesgram (from Telegram to <a href="http://kifiles.gq">KiFiles</a>) uploader)</a>
 </h1>
 <p align="center">
 <a href="https://www.patreon.com/shishcat"><img alt="donate" src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png"/></a>

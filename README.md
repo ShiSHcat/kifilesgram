@@ -23,7 +23,7 @@ npm install
 ```
 If you are on windows download the repo from the Download button , extract it in a directory and run npm install .
 <br>
-Then rename config.example.js into config.js , get a bot token with @BotFather on telegram and set it into readme.
+Then rename config.example.js into config.js , get a bot token with @BotFather on telegram and set it into config.js.
 
 ## How to use
 To run do 

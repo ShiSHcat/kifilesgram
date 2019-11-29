@@ -38,7 +38,8 @@ module.exports.vid = async(ctx,users)=>{
   var url = await ctx.telegram.getFileLink( ctx.message.video.file_id );
   if (win) var e = "\\";
    else var e = "/";
-  var path = tmpdir+e+ctx.message.video.file_name;
+   var fna = url.split("/")[url.split("/").length-1]
+  var path = tmpdir+e+fna;
   var pr = fs.createWriteStream(path)
   request(url).pipe(pr)
   pr.on("close",()=>{

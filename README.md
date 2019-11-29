@@ -1,6 +1,9 @@
 <h1 align="center">
-  <a href="https://github.com/discordgram/DiscordForTelegram">Kifilesgram</a> (from Telegram to <a href="http://kifiles.gq">KiFiles</a>)</a>
-</h1>
+  <a href="https://github.com/discordgram/DiscordForTelegram">Kifilesgram</a> (from Telegram to <a href="http://kifiles.gq">KiFiles</a>)
+</h1> 
+
+> ## If you dont want to selfhost just use the [@kifilesbot on telegram](http://t.me/kifilesbot).
+
 <p align="center">
 <a href="https://www.patreon.com/shishcat"><img alt="donate" src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png"/></a>
 </p>
@@ -12,7 +15,7 @@
 </p>
 <hr>
 
-## If you dont want to selfhost just use the @kifilesbot on telegram.
+
 > ## This bot can be used to get links from forwarded pics/video/documents.
 ## How to install
 ## You must have installed node.js to install this telegram bot.

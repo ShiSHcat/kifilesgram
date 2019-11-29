@@ -45,7 +45,7 @@ module.exports.vid = async(ctx,users)=>{
   pr.on("close",()=>{
     kif({
      path:path,
-     fn:ctx.message.video.file_name,
+     fn:fna,
      mime:ctx.message.video.mime_type,
      ctx:ctx,
      tkn:le })

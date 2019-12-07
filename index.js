@@ -6,9 +6,9 @@ const rg = require("./stuff/register.js")
 const bot = new Telegraf(config.bottoken)
 const a = require("./stuff/info.js");
 var users = {};
-bot.on("document",async(ctx)=>tg.doc(ctx,users))
-bot.on("photo",async(ctx)=>await tg.photo(ctx,users))
-bot.on("video",(ctx)=>tg.vid(ctx,users))
-bot.command("login",async(ctx)=>rg(users,ctx))
+bot.on("document",async(ctx)=>try{tg.doc(ctx,users)}catch(){})
+bot.on("photo",async(ctx)=>try{await tg.photo(ctx,users)}catch(){})
+bot.on("video",(ctx)=>try{tg.vid(ctx,users)}catch(){})
+bot.command("login",async(ctx)=>try{rg(users,ctx)}catch(){})
 bot.command("start",a.start)
 bot.launch(config.bottoken)

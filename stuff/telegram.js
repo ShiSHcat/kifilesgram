@@ -12,6 +12,7 @@ module.exports.doc = async(ctx,users)=>{
        return;
    }
    var url = await ctx.telegram.getFileLink( ctx.message.document.file_id ).catch(e=>{ctx.reply("failed")});
+   if(!url) return;
    if (win) var e = "\\";
     else var e = "/";
    var path = tmpdir+e+ctx.message.document.file_name;
@@ -36,6 +37,7 @@ module.exports.vid = async(ctx,users)=>{
       return;
   }
   var url = await ctx.telegram.getFileLink( ctx.message.video.file_id ).catch(e=>{ctx.reply("failed")});
+  if(!url) return;
   if (win) var e = "\\";
    else var e = "/";
    var fna = url.split("/")[url.split("/").length-1]

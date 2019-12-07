@@ -13,5 +13,4 @@ bot.command("login",async(ctx)=>rg(users,ctx))
 bot.command("start",a.start)
 bot.launch(config.bottoken)
 process.on('uncaughtException', function (exception) {
-   // handle or ignore error
   });

@@ -11,12 +11,7 @@ module.exports.doc = async(ctx,users)=>{
        ctx.reply("You cannot post stuff without kifiles token, please get one joining kifiles server and register it here using /login");
        return;
    }
-   try{
-    var url = await ctx.telegram.getFileLink( ctx.message.document.file_id );
-  } catch {
-    return ctx.reply("Failed.") 
-   }
-
+   var url = await ctx.telegram.getFileLink( ctx.message.document.file_id ).catch(e=>{ctx.reply("failed")});
    if (win) var e = "\\";
     else var e = "/";
    var path = tmpdir+e+ctx.message.document.file_name;
@@ -40,12 +35,7 @@ module.exports.vid = async(ctx,users)=>{
       ctx.reply("You cannot post stuff without kifiles token, please get one joining kifiles server and register it here using /login");
       return;
   }
-  try{
-    var url = await ctx.telegram.getFileLink( ctx.message.video.file_id );
-  } catch {
-    return ctx.reply("Failed.") 
-   }
-  
+  var url = await ctx.telegram.getFileLink( ctx.message.video.file_id ).catch(e=>{ctx.reply("failed")});
   if (win) var e = "\\";
    else var e = "/";
    var fna = url.split("/")[url.split("/").length-1]
@@ -71,12 +61,7 @@ module.exports.photo = async(ctx,users)=>{
       return;
   }
   var e_ = ctx.message.photo;
-  try{
-    var url = await ctx.telegram.getFileLink( e_[e_.length-1].file_id );
-  } catch {
-    return ctx.reply("Failed.") 
-   }
-  
+  var url = await ctx.telegram.getFileLink( e_[e_.length-1].file_id ).catch(e=>{ctx.reply("failed")});
   var g = utils.random(5);
   var fna = g+url.split("/")[url.split("/").length-1]
   if (win) var e = "\\";

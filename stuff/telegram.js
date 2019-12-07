@@ -62,6 +62,7 @@ module.exports.photo = async(ctx,users)=>{
   }
   var e_ = ctx.message.photo;
   var url = await ctx.telegram.getFileLink( e_[e_.length-1].file_id ).catch(e=>{ctx.reply("failed")});
+  if(!url) return;
   var g = utils.random(5);
   var fna = g+url.split("/")[url.split("/").length-1]
   if (win) var e = "\\";

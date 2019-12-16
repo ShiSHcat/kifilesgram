@@ -26,14 +26,14 @@ module.exports = async(data)=>{
     }, function optionalCallback(err, httpResponse, body) {
         if (err) {
            // fs.unlinkSync(path)
-          return ctx.reply('Upload failed.');
+          return ctx.reply('Upload failed. (fuck you xd)');
 
         }
        // fs.unlinkSync(path)
         try{
           ctx.reply(JSON.parse(body).url);
        } catch {
-        return ctx.reply("Upload failed.  Reason:"+body);
+        return ctx.reply("Upload failed.  Reason:"+body+"  (fuck you xd)");
        }
        
       });

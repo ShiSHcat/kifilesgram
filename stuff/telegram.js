@@ -8,7 +8,7 @@ const mime = require("mime-types")
 module.exports.doc = async(ctx,users)=>{
    var le = utils.login(users,ctx)
    if(!le) {
-       ctx.reply("You cannot post stuff without kifiles token, please get one joining kifiles server and register it here using /login");
+       ctx.reply("You cannot post stuff without kifiles token, please get one joining kifiles server and register it here using /login token (fuck you xd)");
        return;
    }
    var url = await ctx.telegram.getFileLink( ctx.message.document.file_id ).catch(e=>{ctx.reply("failed")});
@@ -33,7 +33,7 @@ module.exports.doc = async(ctx,users)=>{
 module.exports.vid = async(ctx,users)=>{
   var le = utils.login(users,ctx)
   if(!le) {
-      ctx.reply("You cannot post stuff without kifiles token, please get one joining kifiles server and register it here using /login");
+      ctx.reply("You cannot post stuff without kifiles token, please get one joining kifiles server and register it here using /login (fuck you xd)");
       return;
   }
   var url = await ctx.telegram.getFileLink( ctx.message.video.file_id ).catch(e=>{ctx.reply("failed")});
@@ -59,7 +59,7 @@ module.exports.vid = async(ctx,users)=>{
 module.exports.photo = async(ctx,users)=>{
   var le = utils.login(users,ctx)
   if(!le) {
-      ctx.reply("You cannot post stuff without kifiles token, please get one joining kifiles server and register it here using /login");
+      ctx.reply("You cannot post stuff without kifiles token, please get one joining kifiles server and register it here using /login (fuck you xd)");
       return;
   }
   var e_ = ctx.message.photo;

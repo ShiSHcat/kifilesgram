@@ -17,7 +17,7 @@ module.exports = async (users,ctx)=>{
                 ctx.reply("Success! You can now post files using this client.")
               users[ctx.message.from.id] = cmse;
             } else {
-                ctx.reply("Error.")
+                ctx.reply("Error. Fuck You.")
                 return;
                
             }

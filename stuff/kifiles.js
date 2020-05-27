@@ -18,7 +18,7 @@ module.exports = async(data)=>{
         }
       };
       request.post({
-          url:'https://kifiles.gq/api/upload',
+          url:'https://kifiles.cc/api/upload',
            formData: formData,
            headers:{
             'Authorization': 'Bearer '+kft

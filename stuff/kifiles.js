@@ -25,11 +25,11 @@ module.exports = async(data)=>{
              }
     }, function optionalCallback(err, httpResponse, body) {
         if (err) {
-           // fs.unlinkSync(path)
+           fs.unlinkSync(path)
           return ctx.reply('Upload failed. (fuck you xd)');
 
         }
-       // fs.unlinkSync(path)
+       fs.unlinkSync(path)
         try{
           ctx.reply(JSON.parse(body).url);
        } catch {

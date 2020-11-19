@@ -6,7 +6,7 @@
 </p>
 <p align="center">
 <a href="https://img.shields.io/github/license/ShiSHcat/kifilesgram"><img alt="license" src="https://img.shields.io/github/license/ShiSHcat/kifilesgram"/></a>
-<a href="https://shishcat.ga"><img alt="author" src="https://img.shields.io/badge/author-ShiSHcat8214-red"/></a>
+<a href="https://shishc.at"><img alt="author" src="https://img.shields.io/badge/author-ShiSHcat8214-red"/></a>
 <a href="https://telegraf.js.org"><img alt="framework" src="https://img.shields.io/badge/framework--telegram-Telegraf-yellow"/></a>
 <a href="https://telegraf.js.org"><img alt="framework" src="https://img.shields.io/badge/framework--telegram-Telegraf-yellow"/></a>
 </p>

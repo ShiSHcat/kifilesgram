@@ -33,7 +33,7 @@ module.exports.doc = async(ctx,users)=>{
 module.exports.vid = async(ctx,users)=>{
   var le = utils.login(users,ctx)
   if(!le) {
-      ctx.reply("You cannot post stuff without kifiles token, please get one joining kifiles server and register it here using /login (fuck you xd)");
+      ctx.reply("You cannot post stuff without kifiles token, please get one joining kifiles server and register it here using /login" );
       return;
   }
   var url = await ctx.telegram.getFileLink( ctx.message.video.file_id ).catch(e=>{ctx.reply("failed")});
